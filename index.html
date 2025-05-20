@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZ Chronicles</title>
+    <link rel="stylesheet" href="css/style.css">
+<!-- Font Awesome Kit (use your own kit if different) -->
+<!-- Font Awesome Free v6 CDN -->
+<script src="https://kit.fontawesome.com/317f4eb578.js" crossorigin="anonymous"></script>
+<link rel="apple-touch-icon" sizes="180x180" href="media/favi/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="media/favi/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="media/favi/favicon-16x16.png">
+<link rel="manifest" href="media/favi/site.webmanifest">
+
+
+
+</head>
+<body>
+    <header>
+        <div class="container logo">
+            <h1><a href="index.html">AZ Chronicles</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Stories</a></li>
+                    <!-- <li><a href="stories.html" class=" active">Stories</a></li> -->
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="all-stories-list">
+                <!-- <h2>All Stories</h2> -->
+                <div class="search-container">
+                <div class="search-box">
+                    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                    <input type="text" id="search-input" placeholder="Search stories...">
+                </div>
+                </div>
+                <div id="active-filters" style="margin-bottom: 0.5em;"></div>
+                <div id="story-items-container">
+                    <!-- Stories will be listed here, populated by JS -->
+                    <article class="story-item">
+                        <h3><a href="_posts/2025-05-16-sample-story.html">First Story</a></h3>
+                        <p class="story-meta"><i class="fa-solid fa-calendar-week"></i> &nbsp; <time datetime="2025-05-16">May 16, 2025</time> | &nbsp;&nbsp; <i class="fa-solid fa-tags"></i>&nbsp; <a href="#tag-AZC">AZC</a>, <a href="#tag-personal">personal</a></p>
+                        <p>It's a place where I share my chaotic thoughts, experiences, writing and perhaps a bit of coding journey.
+                             <a href="_posts/2025-05-16-sample-story.html">Read more &rarr;</a></p>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AZ Chronicles. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script> 
+</body>
+</html>

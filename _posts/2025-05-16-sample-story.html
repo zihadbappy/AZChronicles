@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZ Chronicles</title>
+    <script src="https://kit.fontawesome.com/151f99639a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../media/favi/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../media/favi//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../media/favi//favicon-16x16.png">
+<link rel="manifest" href="../media/favi/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div class="container logo">
+            <h1><i class="fa-light fa-ghost"></i><a href="../index.html">AZ Chronicles</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Stories</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <article class="story-full">
+                <header class="story-header">
+                    <h1>First story</h1>
+                    <p class="story-meta"><i class="fa-solid fa-calendar-week"></i> &nbsp; <time datetime="2025-05-16">May 16, 2025</time> | &nbsp;&nbsp; <i class="fa-solid fa-tags"></i>&nbsp; <a href="#tag-AZC">AZC</a>, <a href="#tag-personal">personal</a></p>
+                </header>
+                
+                <section class="story-content">
+                    
+                    <h2>Why I Made This</h2>
+                    <p>This is the first story of my journal. This blog/journal is my space to share thoughts, sky photos, random code experiments, and anything else that feels worth documenting.</p>
+
+                    
+                <figure>
+                    <img src="../media/cb-eve.jpg" alt="Evening sky from my window" style="max-width: 60%; height: auto; margin: 0px 0;">
+                    <figcaption><i class="fa-regular fa-comment-dots"></i> <i>I miss the Fall sunset views of my hometown</i></figcaption>
+                </figure>
+                    
+                    <p>Here’s an example of something you might find here soon — a silly script that randomly picks a sky color:</p>
+                    <pre class="code-snippet"><code>
+const skyColors = ["pink", "orange", "blue-gray", "purple"];
+const pickColor = () => skyColors[Math.floor(Math.random() * skyColors.length)];
+console.log("Today's sky mood:", pickColor());
+                    </code></pre>
+                    
+                    <p>And yes, I might even drop in a few memes or low-res GIFs here and there:</p>
+                    <figure>
+                        <img src="../media/skateboarding-cat.gif" alt="Car" style="max-width: 60%; height: auto; margin: 0px 0;">
+                        <figcaption><i class="fa-regular fa-comment-dots"></i><i>Look at this car go</i></figcaption>
+                    </figure>
+
+                    <p>Stick around(or not) to see my autistic rants.</p>
+                </section>
+                
+                <nav class="story-navigation">
+                    <a href="../index.html">&larr; Back to All Stories</a>
+                </nav>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AZ Chronicles. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
