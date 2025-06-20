@@ -22,7 +22,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="story-item-content">
                     <h3><a href="_posts/${story.file}">${story.title}</a></h3>
                     <p class="story-meta"><i class="fa-solid fa-calendar-week"></i> &nbsp; ${story.date} | &nbsp;&nbsp; <i class="fa-solid fa-tags"></i>&nbsp;  ${tagsHTML}</p>
-                    <p>${story.snippet} <a href="_posts/${story.file}">Read more &rarr;</a></p>
+<p>
+  ${story.snippet}
+  <a href="_posts/${story.file}" class="read-more-inline">Read more →</a>
+</p>
+
+
                 </div>
             </article>
         `;

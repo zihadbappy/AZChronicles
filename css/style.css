@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Commissioner:wght@100..900&family=Funnel+Display:wght@300..800&family=Gowun+Dodum&family=Leckerli+One&family=Lugrasimo&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
 :root {
-    --background: #f8f9fa;
+    --background: #e3e3e3;
     --text-dark: #1a1a1a;
-    --accent: #007a7c;
+    --accent: #35536b;
     --story-heading: "Merriweather", sans-serif;
     --font-body: "Funnel Display", sans-serif;
     --spacing: 1rem;
@@ -176,6 +176,9 @@ img, video {
     flex-wrap: wrap;
 }
 
+.story-item {
+    background:rgb(240, 242, 246);
+}
 .story-item:hover {
     background: #ffffff;
 }
@@ -188,6 +191,7 @@ img, video {
 
 .story-item-thumbnail {
     width: 100%;
+    height: 120px;
     /* height: 80px; */
     object-fit: cover;
 }
@@ -339,4 +343,41 @@ figcaption {
     .search-container input[type="text"] {
         max-width: 100%;
     }
+}
+
+.story-meta a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+
+.read-more-inline {
+  float: right;
+  font-style: italic;
+  font-size: 0.95em;
+  color: #444;
+  text-decoration: none;
+  opacity: 0.8;
+  margin-left: 10px;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.read-more-inline:hover {
+  opacity: 1;
+  color: #000;
+}
+.read-more-inline {
+  float: right;
+  font-style: italic;
+  font-size: 0.95em;
+  color: #444;
+  text-decoration: none;
+  opacity: 0.8;
+  margin-left: 10px;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.read-more-inline:hover {
+  opacity: 1;
+  color: #000;
 }
