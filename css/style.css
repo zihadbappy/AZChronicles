@@ -59,7 +59,6 @@ header .logo h1{
 header h1{
     font-family: 'Merriweather', sans-serif;
     margin-top: 1rem;
-
     margin-bottom: 0.5rem;
     color: rgb(0, 0, 0);
     font-size: 1.75rem;
@@ -72,7 +71,6 @@ header h1 a {
 header h1 a:hover {
 color: #007a7c;
 }
-
 
 nav ul {
     list-style: none;
@@ -162,57 +160,56 @@ img, video {
     max-width: 100%;
     height: auto;
     display: block;
-    margin-bottom: var(--spacing);
+    margin-bottom: 0;
 }
 
 .story-item {
-    background: var(--background);
+    background: rgb(240, 242, 246);
     border-radius: 15px;
-    padding: .75rem;
-    margin-bottom: 1rem;
-    border-left: 4px solid var(--accent);
+    padding: 0.5rem; /* Reduced padding for more compact look */
+    margin-bottom: 0.5rem; /* Reduced margin for tighter spacing */
+    border-left: 3px solid var(--accent);
     display: flex;
-    gap: 1rem;
+    gap: 0.75rem; /* Reduced gap for compactness */
     flex-wrap: wrap;
+    font-size: 0.8rem; /* Slightly smaller font size for compactness */
 }
 
-.story-item {
-    background:rgb(240, 242, 246);
-}
 .story-item:hover {
     background: #ffffff;
 }
 
 .story-item-thumbnail-container {
-    flex: 0 0 140px;
-    /* overflow: hidden; */
+    flex: 0 0 120px; /* Slightly smaller thumbnail width */
     border-radius: 4px;
 }
 
 .story-item-thumbnail {
     width: 100%;
-    height: 120px;
-    /* height: 80px; */
+    height: 100px; /* Reduced height for compactness */
     object-fit: cover;
+    border-radius: 15px;
 }
 
 .story-item-content {
     flex: 1;
-    min-width: 180px;
+    min-width: 160px;
 }
 
 .story-meta {
-    font-size: 0.8rem;
+    font-size: 0.7rem; /* Slightly smaller meta text */
     color: #666;
     margin-bottom: 0;
 }
+
 .story-item h3 {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.3rem; /* Reduced margin for compactness */
+    font-size: 1.2rem; /* Slightly smaller heading */
 }
 
 .story-meta {
     margin-top: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem; /* Reduced margin */
 }
 
 .story-item p {
@@ -232,7 +229,6 @@ img, video {
     margin-bottom: var(--spacing);
 }
 
-
 input[type="text"]:focus {
     outline: 2px solid var(--accent);
     border-color: var(--accent);
@@ -250,19 +246,12 @@ input[type="text"]:focus {
 
 .story-full header.story-header {
     margin-bottom: 1.5rem;
-    padding: 0;
+    padding: 0.2rem;
     text-align: center;
     background-color: white;
-    border-radius: 20px; /* Rounded corners */
+    border-radius: 20px;
     border-bottom: 3px solid var(--accent);
 }
-/* 
-.story-full .story-content p,
-.story-full .story-content ul,
-.story-full .story-content ol,
-.story-full .story-content blockquote {
-    margin-bottom: var(--spacing);
-} */
 
 .story-full .story-content pre {
     background: #ffffff;
@@ -270,7 +259,6 @@ input[type="text"]:focus {
     padding: 0rem 1rem;
     overflow-x: auto;
     border-radius: 20px;
-    /* margin-bottom: var(--spacing); */
     font-family: monospace;
 }
 
@@ -301,6 +289,7 @@ figcaption {
 }
 
 @media (max-width: 768px) {
+
     .container {
         width: 100%;
     }
@@ -315,16 +304,34 @@ figcaption {
     }
 
     .story-item {
-        flex-direction: column;
+        flex-direction: row; /* Keep thumbnail on left, content on right */
+        padding: 0.5rem;
+        gap: 0.75rem;
     }
 
     .story-item-thumbnail-container {
-        width: 100%;
-        /* margin-bottom: 1rem; */
+        flex: 0 0 120px; /* Maintain thumbnail size */
     }
 
     .story-item-thumbnail {
-        height: 120px;
+        height: 100px; /* Maintain height */
+    }
+   #about-me {
+        flex-direction: column !important;
+        align-items: center !important; /* Override inline align-items */
+        justify-content: center;
+    }
+
+    #about-me > div:nth-child(2) { /* Image container */
+        order: -1; /* Move image to top */
+        display: flex;
+        justify-content: center; /* Center the image horizontally */
+        flex-shrink: 0;
+    }
+
+    #about-me img {
+        margin-left: auto;
+        margin-right: auto; /* Ensure image itself is centered */
     }
 }
 
@@ -343,41 +350,56 @@ figcaption {
     .search-container input[type="text"] {
         max-width: 100%;
     }
+
+    .story-item {
+        flex-direction: row; /* Ensure thumbnail on left, content on right */
+        padding: 0.5rem;
+        gap: 0.75rem;
+    }
+
+    .story-item-thumbnail-container {
+        flex: 0 0 100px; /* Slightly smaller for very small screens */
+    }
+
+    .story-item-thumbnail {
+        height: 80px; /* Slightly smaller height */
+    }
+    #about-me {
+        flex-direction: column !important;
+        align-items: center !important; /* Override inline align-items */
+        justify-content: center;
+    }
+
+    #about-me > div:nth-child(2) { /* Image container */
+        order: -1; /* Move image to top */
+        display: flex;
+        justify-content: center; /* Center the image horizontally */
+        flex-shrink: 0;
+    }
+
+    #about-me img {
+        margin-left: auto;
+        margin-right: auto; /* Ensure image itself is centered */
+    }
 }
 
 .story-meta a:hover {
-  text-decoration: underline;
-  color: #000;
+    text-decoration: underline;
+    color: #000;
 }
 
-
 .read-more-inline {
-  float: right;
-  font-style: italic;
-  font-size: 0.95em;
-  color: #444;
-  text-decoration: none;
-  opacity: 0.8;
-  margin-left: 10px;
-  transition: opacity 0.2s ease, color 0.2s ease;
+    float: right;
+    font-style: italic;
+    font-size: 0.95em;
+    color: #444;
+    text-decoration: none;
+    opacity: 0.8;
+    margin-left: 10px;
+    transition: opacity 0.2s ease, color 0.2s ease;
 }
 
 .read-more-inline:hover {
-  opacity: 1;
-  color: #000;
-}
-.read-more-inline {
-  float: right;
-  font-style: italic;
-  font-size: 0.95em;
-  color: #444;
-  text-decoration: none;
-  opacity: 0.8;
-  margin-left: 10px;
-  transition: opacity 0.2s ease, color 0.2s ease;
-}
-
-.read-more-inline:hover {
-  opacity: 1;
-  color: #000;
+    opacity: 1;
+    color: #000;
 }
